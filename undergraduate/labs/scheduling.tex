@@ -1,0 +1,43 @@
+\documentclass[pdftex,handout]{beamer}
+\usetheme{metropolis}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{fancyvrb}
+\usepackage{listings}
+\begin{document}
+\lstset{language=C, escapeinside={(*@}{@*)}, numbers=left,
+  basicstyle=\tiny, showstringspaces=false, showspaces=false, showtabs=false}
+
+\title{Lab 2: Scheduling}
+\author[shortname]{George V. Neville-Neil}
+
+\begin{frame}
+  \frametitle{Setup}
+  \begin{enumerate}
+  \item Boot the virtual machine
+  \item Login as root on the console
+  \item Load DTrace as in Lab 1
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Scheduling Lab Exercises}
+  \begin{itemize}
+  \item Write a one-liner to show processes waking up
+  \item Extend wake up one-liner to include stack tracing
+  \item Extend priority one-liner to include stack tracing
+  \item Add periodic output to \verb+cpuwalk.d+
+  \item Track context switching for a single process
+  \item Write a script to show when threads completely switch cores
+  \end{itemize}
+\end{frame}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

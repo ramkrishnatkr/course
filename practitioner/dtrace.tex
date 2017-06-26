@@ -1,9 +1,5 @@
 \documentclass[pdftex]{beamer}
-\mode<presentation>
-{
-  \usetheme{default}
-  \useoutertheme{infolines}
-}
+\usetheme{metropolis}
 
 \usepackage[english]{babel}
 \usepackage[latin1]{inputenc}
@@ -183,7 +179,7 @@ CPU     ID                    FUNCTION:NAME
 \end{frame}
 
 \begin{frame}[fragile]
-  \frametitle{DTrace One Liners}
+  \frametitle{DTrace One-Liners}
   \begin{itemize}
   \item A set of useful single line scripts
   \end{itemize}
@@ -284,9 +280,9 @@ dtrace: description 'syscall::write:entry ' matched 2 probes
   \frametitle{DTrace Toolkit}
   \begin{itemize}
   \item An open source set of tools written to use D scripts
-  \item Currently specific to Solaris
-  \item Exists as a FreeBSD port (thanks to Steve)
-  \item Currently being updated
+  \item Originally specific to Solaris
+  \item Exists as a FreeBSD port and package
+  \item Currently being updated with new scripts
   \end{itemize}
 \end{frame}
 
@@ -374,7 +370,7 @@ kernel`acpi_cpu_c1                                        965  53.6%
   \item Trace all the system calls used by sshd
   \item Summarize requested write() sizes by program name
   \item Summarize return values from write() by program name
-  \item Find and modify three (3) of the DTrace one liners
+  \item Find and modify three (3) of the DTrace one-liners
   \end{itemize}
 \end{frame}
 
